@@ -1,0 +1,13 @@
+{
+	"name": "ls_ProjectFormula1_ws",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-730197986473670.10.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/8ffee2bf-cf04-43c0-8b8e-f8d18d009f65/resourceGroups/AM-ProjectFormula1/providers/Microsoft.Databricks/workspaces/ProjectFormula1-ws",
+			"existingClusterId": "0506-145247-dtgd0vh9"
+		}
+	}
+}
