@@ -1,0 +1,30 @@
+{
+	"name": "pl_ingest_formula1_data",
+	"properties": {
+		"description": "Ingesting the formula1 data",
+		"activities": [
+			{
+				"name": "Ingest Circuits File",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Formula1/ingestion/1.ingest_circuits_file"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_ProjectFormula1_ws",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"concurrency": 1,
+		"annotations": []
+	}
+}
